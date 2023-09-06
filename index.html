@@ -7,29 +7,39 @@
     </head>
     <body>
         <h1>Calculadora</h1>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>/</button>
+        <button onclick="key()">7</button>
+        <button onclick="key()">8</button>
+        <button onclick="key()">9</button>
+        <button onclick="key()">/</button>
         <br>
         
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>x</button>
+        <button onclick="key()">4</button>
+        <button onclick="key()">5</button>
+        <button onclick="key()">6</button>
+        <button onclick="key()">x</button>
         <br>
         
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>-</button>
+        <button onclick="key()">1</button>
+        <button onclick="key()">2</button>
+        <button onclick="key()">3</button>
+        <button onclick="key()">-</button>
         <br>
         
-        <button>0</button>
-        <button>,</button>
-        <button>+</button>
-        <button>=</button>
+        <button onclick="key()">0</button>
+        <button onclick="key()">,</button>
+        <button onclick="key()">+</button>
+        <button onclick="key()">=</button>
         <br>
-        
+    <script>
+        function key(n){
+            var x = 0
+            if(x == 0){
+                 x = n;
+            } else{
+                x = (x * 10) + n
+            }
+        }
+    </script>
+
 </body>
 </html>
