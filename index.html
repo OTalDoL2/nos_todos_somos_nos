@@ -5,41 +5,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculadora</title>
         <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
     </head>
     <body>
-        <h1>Calculadora</h1>
+        <div class="container">
 
-        <h4 id="result"></h4>
-        <h4 id="valor">0</h4>
-        
-        <button onclick="reset()">C</button>
-        <br>
-
-        <button onclick="key(7)">7</button>
-        <button onclick="key(8)">8</button>
-        <button onclick="key(9)">9</button>
-        <button onclick="defineOperacao('/')">/</button>
-        <br>
-        
-        <button onclick="key(4)">4</button>
-        <button onclick="key(5)">5</button>
-        <button onclick="key(6)">6</button>
-        <button onclick="defineOperacao('*')">x</button>
-        <br>
-        
-        <button onclick="key(1)">1</button>
-        <button onclick="key(2)">2</button>
-        <button onclick="key(3)">3</button>
-        <button onclick="defineOperacao('-')">-</button>
-        <br>
-        
-        <button onclick="key(0)">0</button>
-        <button onclick="key()">,</button>
-        <button onclick="defineOperacao('+')">+</button>
-        <button onclick="resultado()">=</button>
-        <br>
-
-    <script src="script.js"></script>
+                <h1>Calculadora</h1>
+                <div class="visor">
+                    <h4 id="result"> </h4>
+                    <h4 id="valor">0</h4>
+                </div>
+                
+                <div class="espaco-botoes">
+                    <button onclick="reset()">C</button>
+                    <br>
+                    <div class="grid-container">
+                        
+                        <button class="grid-item" onclick="key(7)">7</button>
+                            <button class="grid-item" onclick="key(8)">8</button>
+                            <button class="grid-item" onclick="key(9)">9</button>
+                            <button class="grid-item" onclick="defineOperacao('/')">/</button>
+                            <!-- <br> -->
+                            
+                            <button class="grid-item" onclick="key(4)">4</button>
+                            <button class="grid-item" onclick="key(5)">5</button>
+                            <button class="grid-item" onclick="key(6)">6</button>
+                            <button class="grid-item" onclick="defineOperacao('*')">x</button>
+                            <!-- <br> -->
+                            
+                            <button class="grid-item" onclick="key(1)">1</button>
+                            <button class="grid-item" onclick="key(2)">2</button>
+                            <button class="grid-item" onclick="key(3)">3</button>
+                            <button class="grid-item" onclick="defineOperacao('-')">-</button>
+                            <!-- <br> -->
+                            
+                            <!-- <button class="grid-item" onclick="key()">,</button class="grid-item"> -->
+                                <button class="grid-item" onclick="resultado()">=</button>
+                                <button class="grid-item two" onclick="key(0)">0</button>
+                                <button class="grid-item" onclick="defineOperacao('+')">+</button>
+                    </div>
+                    <!-- <br> -->
+                </div>
+                
+        </div>
+        <script src="script.js"></script>
         
 </body>
 </html>
