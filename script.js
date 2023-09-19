@@ -45,18 +45,24 @@ function resultado(){
     switch(operacao){
         case "+":
             result = Number(result) + Number(x)
-            document.getElementById("valor").innerHTML = 0;
-            document.getElementById("result").innerHTML = result;
-            console.log(Number(aux) + Number(x))
             break;
         
         case "-":
-            result = Number(result) + Number(x)
-            document.getElementById("valor").innerHTML = 0;
-            document.getElementById("result").innerHTML = result;
-            console.log(Number(aux) + Number(x))
+            result = Number(result) - Number(x)
+            break;
+        
+        case "*":
+            result = Number(result) * Number(x)
+            break;
+        
+        case "/":
+            result = Number(result) / Number(x)
             break;
     }
+    
+    document.getElementById("valor").innerHTML = 0;
+    document.getElementById("result").innerHTML = result;
+    console.log(Number(aux) + Number(x))
 }
 
 function add(){
