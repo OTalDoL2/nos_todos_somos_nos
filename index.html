@@ -8,29 +8,38 @@
     </head>
     <body>
         <h1>Calculadora</h1>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>/</button>
+
+        <h4 id="result"></h4>
+        <h4 id="valor">0</h4>
+        
+        <button onclick="reset()">C</button>
+        <br>
+
+        <button onclick="key(7)">7</button>
+        <button onclick="key(8)">8</button>
+        <button onclick="key(9)">9</button>
+        <button onclick="div()">/</button>
         <br>
         
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>x</button>
+        <button onclick="key(4)">4</button>
+        <button onclick="key(5)">5</button>
+        <button onclick="key(6)">6</button>
+        <button onclick="mult()">x</button>
         <br>
         
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>-</button>
+        <button onclick="key(1)">1</button>
+        <button onclick="key(2)">2</button>
+        <button onclick="key(3)">3</button>
+        <button onclick="sub()">-</button>
         <br>
         
-        <button>0</button>
-        <button>,</button>
-        <button>+</button>
-        <button>=</button>
+        <button onclick="key(0)">0</button>
+        <button onclick="key()">,</button>
+        <button onclick="defineOperacao('+')">+</button>
+        <button onclick="resultado()">=</button>
         <br>
+
+    <script src="script.js"></script>
         
 </body>
 </html>
